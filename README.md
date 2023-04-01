@@ -1,4 +1,4 @@
-# Desenvolvimento de uma formulário de recrutamento e pessoal
+# Desenvolvimento de um formulário de recrutamento e pessoal
 <br>
 
 > Equipe: The Makers <br>
