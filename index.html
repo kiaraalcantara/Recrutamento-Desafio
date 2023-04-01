@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Recrutamento</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div class="head">
+            <h2>Formulário de Recrutamento</h2>
+            <p>As informações fornecidas neste formulário serão usadas exclusivamente para fins de recrutamento e seleção. Todos os campos são obrigatórios, exceto onde indicado o contrário.</p>
+        </div>
+        <form method="get" action="/resposta/resposta.html" id="myForm">
+            <fieldset>  
+                <h3>Dados pessoais</h3>
+                
+                <div class="campo">
+                    <label for="name">Nome:</label>
+                    <input type="text" id="name" name="name" placeholder="Nome" required>
+                </div>
+
+                <div class="campo">
+                    <label for="nasc">Data de nascimento:</label>
+                    <input type="text" name="nasc" id="nasc" placeholder="00/00/0000/" required>
+                </div>
+
+                <div class="campo">
+                    <label for="genero">Gênero:</label>
+                    <select id="genero" name="genero" required>
+                        <option value="nenhum">Nenhum</option>
+                        <option value="feminino">Feminino</option>
+                        <option value="masculino">Masculino</option>
+                        <option value="naodizer">Prefiro não dizer</option>
+                    </select>
+                </div>
+
+                <div class="campo">
+                    <label for="origem">Nacionalidade</label>
+                    <input type="text" name="origem" name="origem" placeholder="Nascionalidade" required>
+                </div>
+
+                <div class="campo">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" placeholder="E-mail" required>
+                </div>
+
+                <div class="campo">
+                    <label for="endereco">Endereço:</label>
+                    <input type="text" name="endereco" id="endereco" placeholder="Endereço" required>
+                </div>
+
+                <div class="campo">
+                    <label for="cidade">Cidade:</label>
+                    <input type="text" name="cidade" id="cidade" placeholder="Cidade" required>
+                </div>
+
+                <div class="campo">
+                    <label for="estado">Estado:</label>
+                    <input type="text" name="estado" id="estado" placeholder="Estado" required>
+                </div>
+
+                <div class="campo">
+                    <label for="cep">CEP:</label>
+                    <input type="number" name="cep" id="cep" placeholder="CEP" required>
+                </div>
+
+                <div class="campo">
+                    <label for="tel">Telefone:</label>
+                    <input type="tel" name="tel" id="tel" placeholder="(xx) xxxxx-xxxx" required>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <h3>Formação Acadêmica</h3>
+
+                <div class="campo">
+                    <label for="formacao">Formação:</label>
+                    <select name="formacao" id="formacao" required>
+                        <option value="nenhuma">Nenhuma</option>
+                        <option value="Técnico em Informática">Técnico em Informática</option>
+                        <option value="Técnologo em Análise e Desenvolvimento de Sistemas">Técnologo em Análise e Desenvolvimento de Sistemas</option>
+                    </select>
+                </div>
+
+                <div class="campo">
+                    <label for="curso">Além da formação técnicas profissional ofertada no IFTO, já possui algum outro tipo de curso? Se sim, qual?</label>
+                    <input type="text" name="curso" id="curso" required>
+                </div>
+
+                <div class="campo">
+                    <label>Experiências Profissionais:</label>
+                    <select name="exp" id="exp" required>
+                        <option value="Não possuo">Não possuo</option>
+                        <option value="Possuo">Possuo</option>
+                    </select><br>
+                    
+
+                    <label for="expproficional">Última ou Atual Empresa:</label>
+                    <input type="text" name="expproficional" id="expproficional" required>
+
+                    <label for="cargo">Cargo:</label>
+                    <input type="text" name="cargo" id="cargo" required>
+
+                    <label for="tempo-exp">Período de Atuação:</label>
+                    <label for="datainicial">Início:</label>
+                    <input type="date" id="datainicial" name="datainicial" required>
+                    <label for="datafinal">Final:</label>
+                    <input type="date" id="datafinal" name="datafinal" required>
+
+                    <label for="priatv">Principais Atividades e Responsabilidades:</label>
+                    <input type="data" name="priatv" id="priatv" required>
+                </div>
+                <div class="campo">
+                    <label for="expmais">Se você possui mais experiências profissionais, liste-as abaixo (opcional):</label>
+                    <input type="text" name="expmais" id="expmais">
+                </div>
+                <div class="campo">
+                    <label for="adexp">Experiências Adicionais (Empresa, Cargo, Período, Atividades e Responsabilidades):</label>
+                    <input type="text" name="adexp" id="adexp" required>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <h3>Habilidades Técnicas e Idiomas</h3>
+                
+                <div class="campo">
+                    <label for="hab">Informe quais Habilidades Técnicas Relevantes (softwares, ferramentas, certificações):</label>
+                    <label for="habtec">Possui habilidades com idiomas ? Qual Língua:</label>
+                    <input type="text" name="habtec" id="habtec" required>
+                </div>
+                <div class="campo">
+                    <label for="nivelproficiencia">Nível de Proficiência</label>
+                    <select name="nivelproficiencia" id="nivelproficiencia" required>
+                        <option value="basico">Básico</option>
+                        <option value="intermediario">Intermediário</option>
+                        <option value="avancado">Avançado</option>
+                        <option value="fluente">Fluente</option>
+                    </select>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <h3>Habilidades Comportamentais</h3>
+                <div class="campo">
+                    <label for="habcomportamental">Liste três habilidades comportamentais que você considera serem suas principais qualidades profissionais:</label>
+                    <input type="text" name="habcomportamental" id="habcomportamental" required>
+                </div>
+            </fieldset>
+        
+            <fieldset>
+                <h3>Informações Adicionais</h3>
+                <div class="campo">
+                    <label for="salario">Pretensão Salarial:</label>
+                    <input type="text" name="salario" id="salario" required>
+                </div>
+                <div class="campo">
+                    <label for="dispoinicio">Disponibilidade para Início:</label>
+                    <input type="text" name="dispoinicio" id="dispoinicio" required>
+                </div>
+            </fieldset>
+
+            <div class="botao">
+                <button type="submit">Enviar</button>
+            </div>
+        </form>
+    </main>
+</body>
+</html>

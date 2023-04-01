@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Resposta</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="respostas">
+    <h2>Suas informações</h2>
+    <div class="campo">
+      <p class="nome"><strong>Nome:</strong> <span id="name"></span></p>
+      <p class="nasc"><strong>Data de nascimento:</strong> <span id="nasc"></span></p>
+      <p class="genero"><strong>Gênero:</strong> <span id="genero"></span></p>
+      <p class="origem"><strong>Nacionalidade:</strong> <span id="origem"></span></p>
+      <p class="email"><strong>E-mail:</strong> <span id="email"></span></p>
+      <p class="endereco"><strong>Endereço:</strong> <span id="endereco"></span></p>
+      <p class="estado"><strong>Estado:</strong> <span id="estado"></span></p>
+      <p class="cidade"><strong>Cidade:</strong> <span id="cidade"></span></p>
+      <p class="cep"><strong>CEP:</strong> <span id="cep"></span></p>
+      <p class="tel"><strong>Telefone:</strong> <span id="tel"></span></p>
+    </div>
+    <div class="campo">
+      <p class="formacao"><strong>Formação:</strong> <span id="formacao"></span></p>
+      <p class="curso"><strong>Curso:</strong> <span id="curso"></span></p>
+      <p class="exp"><strong>Experiência:</strong> <span id="exp"></span></p>
+      <p class="expproficional"><strong>Experiência Profissionais:</strong> <span id="expproficional"></span></p>
+      <p class="cargo"><strong>Cargo:</strong> <span id="cargo"></span></p>
+      <p class="datainicial"><strong>Iniciou em:</strong> <span id="datainicial"></span></p>
+      <p class="datafinal"><strong>Finalizou em:</strong> <span id="datafinal"></span></p>
+      <p class="priatv"><strong>Principais atividades e Responsabilidades:</strong> <span id="priatv"></span></p>
+      <p class="expmais"><strong>Experiência Profissional:</strong> <span id="expmais"></span></p>
+      <p class="adexp"><strong>Experiências adcionais:</strong> <span id="adexp"></span></p>
+    </div>
+    <div class="campo">
+      <p class="habtec"><strong>Habilidades Técnicas:</strong> <span id="habtec"></span></p>
+      <p class="nivelproficiencia"><strong>Nível de Proficiência:</strong> <span id="nivelproficiencia"></span></p>
+    </div>
+    <div class="campo">
+      <p class="habcomportamental"><strong>Habilidade Comportamental:</strong> <span id="habcomportamental"></span></p>
+    </div>
+    <div class="campo">
+      <p class="salario"><strong>Pretensão Salarial:</strong> <span id="salario"></span></p>
+      <p class="dispoinicio"><strong>Disponibilidade para Início:</strong> <span id="dispoinicio"></span></p>
+    </div>
+  </div>
+  <div class="botao">
+    <a href="/index.html"><button type="submit" >Voltar para o formulário</button></a>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+  <script>
+    const params = new URLSearchParams(window.location.search);
+
+    params.forEach((value, key) => {
+      $(`span#${key}`).html(value);
+    })
+  </script>
+
+</body>
+</html>
